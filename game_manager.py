@@ -190,14 +190,13 @@ class GameManager(object):
         return None
       
     def check_for_winner(self, game):
-    """
-    Check if there is a winner in the game
-    """
-
-    # Check if any of the players have won the game
-    for player in game.players:
+      """
+      Check if there is a winner in the game
+      """
+      # Check if any of the players have won the gam
+      for player in game.players:
         if player.has_won():
-            return player
+          return player
 
     return None
   def end_game_if_one_player_won(self, game):
