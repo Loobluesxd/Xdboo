@@ -197,8 +197,7 @@ class GameManager(object):
       for player in game.players:
         if player.has_won():
           return player
-
-    return None
+      return None
     def end_game_if_one_player_won(self, game):
       """
       End the game if one player has won
