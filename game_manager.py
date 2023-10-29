@@ -199,14 +199,12 @@ class GameManager(object):
           return player
 
     return None
-  def end_game_if_one_player_won(self, game):
-    """
-    End the game if one player has won
-    """
-
-    winner = self.check_for_winner(game)
-
-    if winner:
+    def end_game_if_one_player_won(self, game):
+      """
+      End the game if one player has won
+      """
+      winner = self.check_for_winner(game)
+      if winner:
         self.end_game(game)
 
         # Send a message to the chat announcing the winner
