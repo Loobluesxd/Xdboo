@@ -108,13 +108,13 @@ def do_play_card(bot, player, result_id):
     if len(player.cards) == 0:
         gm.end_game(chat, user)
         send_async(bot, chat.id,
-                   text=__("✨"))
+                   text=__("🏆"))
                    
         send_async(bot, chat.id,
                    text=__("{name} won!", multi=game.translate)
                    .format(name=user.first_name))
         send_async(bot, chat.id,
-                   text=__("⚡️"))
+                   text=__("✨"))
 
         if us.stats:
             us.games_played += 1
