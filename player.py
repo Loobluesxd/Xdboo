@@ -59,7 +59,7 @@ class Player(object):
 
     def draw_first_hand(self):
         try:
-            for _ in range(7):
+            for _ in range(12):
                 self.cards.append(self.game.deck.draw())
         except DeckEmptyError:
             for card in self.cards:
