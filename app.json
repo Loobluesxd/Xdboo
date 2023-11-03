@@ -1,4 +1,3 @@
-@@ -0,0 +1,65 @@
 {
  "name": "Uno_xdbot",
    "description": "Bot Telegram untuk bermain uno",
@@ -62,5 +61,5 @@
        "url": "heroku/python"
      }
    ],
-   "stack": "heroku-20"
+   "stack": "heroku-22"
  }
